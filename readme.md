@@ -71,6 +71,7 @@ curl -X GET localhost:4000/get_customers
 - I will add BOT_TOEKN to .gitignore and feed this info from process.env
 - add inline query to the bot, fetching helpful information from FAQ
 - image path has the bot token, for the real scenario, this is a risk! so, I would upload images in private storage and use this path instead of relying on telegram storage.
+- I will use i18n lib for supporting multi-langauages
 
 ##### Note:
 
