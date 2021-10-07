@@ -34,7 +34,7 @@ I used Node.js, Telegraf lib, and MongoDB inside docker.
 get project from GitHub
 
 ```sh
-cd talkish
+cd talkish-telegram-bot
 ```
 
 run Docker build
@@ -43,7 +43,7 @@ run Docker build
 docker-compose build
 ```
 
-run Docker up
+run Docker up and wait until you see this message in the terminal 'DB Connected' then you can go to Bot
 
 ```sh
 docker-compose up
