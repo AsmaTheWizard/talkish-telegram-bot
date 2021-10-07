@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  backend-node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/node/app/src
+      - ./nodemon.json:/home/node/app/nodemon.json
+    container_name: backend-node
+    expose:
+      - "4000"
+    ports:
+      - "4000:4000"
+    external_links:
+      - mongo
+      - redis
+    command: npm run dev
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
