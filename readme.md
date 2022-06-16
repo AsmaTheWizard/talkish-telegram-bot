@@ -27,7 +27,7 @@ I used Node.js, Telegraf lib, and MongoDB inside docker.
 - Telegraf lib, to build the bot workflow and responses
 - MongoDB as session managment and to store data, such as customer data and feedback data
 - all of them shipped in Docker container
-- I generated randoms order IDs for customer to pcik form
+- I generated randoms order IDs for customer to pick form
 
 ## Installation
 
@@ -37,7 +37,13 @@ get project from GitHub
 cd talkish-telegram-bot
 ```
 
-run Docker build
+go to the following path and add the telegram group token.
+
+```
+/src/config/settings.ts
+```
+
+go back to the main folder and run Docker build
 
 ```sh
 docker-compose build
